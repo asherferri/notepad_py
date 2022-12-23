@@ -35,4 +35,11 @@ def __init__(self, **kwargs)
 
     screenWidth = self.__root.winfo_screenwidth()
     screenHeight = self._root.winfo_screenheight()
-    test potatoaaaa
+    
+    left = (screenWidth / 2) - (self.__thisWidth / 2)
+
+    top = (screenHeight / 2) - (self.__thisHeight / 2)
+
+    self.__root.geometry('%dx%d+%d+%d' % (self.__thisWidth, self.__thisHeight, left, top))
+
+    self.__root.grid_rowconfigure
