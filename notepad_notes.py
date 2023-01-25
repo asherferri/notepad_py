@@ -42,7 +42,10 @@ def __init__(self, **kwargs)
 
     self.__root.geometry('%dx%d+%d+%d' % (self.__thisWidth, self.__thisHeight, left, top))
 
-    self.__root.grid_rowconfigure
+    self.__root.grid_rowconfigure(0, weight=1)
+    self.__root.grid_columnconfigure(0, weight=1)
+
+    self.__thisTextArea.grig(sticky=N + E + S + W)
 
     # tired, happy new year \m/ d(-_-)b \m/ filthy animals
 #test commit
